@@ -3,7 +3,31 @@
     <head>
         <script>
             function bold() {
-                document.getElementById("textarea").style.fontWeight = "bold";
+                document.getElementById("textarea1").style.fontWeight = "bold";
+            }
+            function italic() {
+                document.getElementById("textarea1").style.fontStyle = "italic";
+            }
+            function left() {
+                document.getElementById("textarea1").style.textAlign = "left";
+            }
+            function center() {
+                document.getElementById("textarea1").style.textAlign= "center";
+            }
+            function right() {
+                document.getElementById("textarea1").style.textAlign = "right";
+            }
+            function uppercase() {
+                document.getElementById("textarea1").style.textTransform = "uppercase";
+            }
+            function lowercase() {
+                document.getElementById("textarea1").style.textTransform = "lowercase";
+            }
+            function capitalize() {
+                document.getElementById("textarea1").style.textTransform = "capitalize";
+            }
+            function cleartext() {
+                document.getElementById("textarea1").value=""
             }
         </script>
     </script>
@@ -14,13 +38,13 @@
     <body>
         <input type="button" class="border-2 border-purple-300" value="Bold" onclick="bold()">
         <input type="button" class="border-2 border-purple-300" value="Italic" onclick="italic()">
-        <input type="button" class="border-2 border-purple-300" value="Bold" onclick="bold()">
-        <input type="button" class="border-2 border-purple-300" value="Bold" onclick="bold()">
-        <input type="button" class="border-2 border-purple-300" value="Bold" onclick="bold()">
+        <input type="button" class="border-2 border-purple-300" value="Left" onclick="left()">
+        <input type="button" class="border-2 border-purple-300" value="Center" onclick="center()">
+        <input type="button" class="border-2 border-purple-300" value="Right" onclick="right()">
         <input type="button" class="border-2 border-purple-300" value="Upper Case" onclick="uppercase()">
         <input type="button" class="border-2 border-purple-300" value="Lower Case" onclick="lowercase()">
         <input type="button" class="border-2 border-purple-300" value="Capitalize" onclick="capitalize()">
-        <input type="button" class="border-2 border-purple-300" value="Clear Text" onclick="cleartext()">
-        <input type="textarea" class="border-4 border-purple-500">
+        <input type="button" class="border-2 border-purple-300" value="Clear Text" onclick="cleartext()"> <br>
+        <input type="textarea" id="textarea1" class="border-4 border-purple-500">
     </body>
 </html>
